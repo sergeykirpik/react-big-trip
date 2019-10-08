@@ -4,28 +4,33 @@
   "private": true,
   "description": "Личный проект «Большое путешествие» от HTML Academy",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server",
-    "eslint": "eslint src/**/*.js",
-    "test": "npm run eslint"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "css-loader": "3.2.0",
-    "error-overlay-webpack-plugin": "0.4.0",
-    "eslint": "6.1.0",
-    "eslint-config-htmlacademy": "0.5.2",
-    "style-loader": "1.0.0",
-    "webpack": "4.39.1",
-    "webpack-cli": "3.3.6",
-    "webpack-dev-server": "3.8.0"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "engines": {
-    "node": "10"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "chart.js": "2.8.0",
     "chartjs-plugin-datalabels": "0.7.0",
     "flatpickr": "4.6.2",
-    "moment": "2.24.0"
+    "moment": "2.24.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0"
   }
 }
