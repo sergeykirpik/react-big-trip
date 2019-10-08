@@ -16,7 +16,7 @@ export default class RouteModel {
     return [
       moment(this._points[0].startTime).format(`MMM D`),
       moment(this._points[this._points.length - 1].endTime).format(`MMM D`),
-    ].join(` &mdash; `);
+    ].join(` — `);
   }
 
   get points() {
@@ -31,9 +31,9 @@ export default class RouteModel {
       return [
         this._points[0].destination.name,
         this._points[this._points.length - 1].destination.name
-      ].join(` &mdash; ... &mdash; `);
+      ].join(` — ... — `);
     }
-    return this._points.map((it) => it.destination.name).join(` &mdash; `);
+    return this._points.map((it) => it.destination.name).join(` — `);
   }
 
   setPoints(points) {
